@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>¿Qué es y para que sirve?</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/etiquetas.css">
+        <link rel="stylesheet" href="../css/btnVolver.css">
+        <link rel="stylesheet" href="../css/btnBuscar.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    </head>
+    <body class="cuerpo">
+            <div class="buscar col-xs-12">
+                    <button type="submit" onclick="buscar()" class="btn btn-default pull-right">Buscar</button>
+                    <input id="busqueda" class="pull-right">
+                </div>
+                <div id="respuestaBusqueda" title="Resultado Busqueda"></div>
+        <section class="contenido">
+        <h1 class="text-center">¿Qué es y para qué sirve?</h1>
+
+            <h2>Resumen del trabajo</h2>
+            <p>
+                    <span class="first-character sc">E</span>l principal objetivo de este proyecto es dar a conocer la posibilidad de mover un robot mediante una aplicación dentro de un entorno cerrado. No tiene un fin único, más bien es una idea general. Se podría utilizar con un fin doméstico (mover objetos en una habitación en la que no estemos físicamente) o también con fines industriales (automatizar un proceso en una cadena de distribución dentro de una nave industrial). </p><p>
+            El sistema mostrará la posición del robot en el interior del recinto donde se encuentre, además de información sobre sensores del mismo como es su batería restante y su orientación respecto al norte.</p>
+            <figure>     
+                    <img class="img-responsive" alt="Visión general de la aplicación" src="images/esquema.png">
+                      <figcaption class="text-center">Esquema general de la aplicación</figcaption>
+                  </figure>
+            <p>
+            Nuestro proyecto incorporará también un sistema de memorización de rutas. Esto es, que cuando se realice una ruta en tiempo real, y el usuario quiera repetirla, tendrá la posibilidad de guardarla y luego reproducirla en otro momento. 
+            Este sistema de memorización de rutas constará de diversas funcionalidades. Entre ellas estará la de realizar la ruta a la inversa, pausar la ruta, volver al punto de inicio o reanudar la ruta tras una pausa.</p>
+ 
+            <h2>¿Para qué?</h2>
+            <p><span class="first-character sc">L</span>a finalidad es la realización de vuelos en interiores con un robot móvil (en nuestro caso un drone). Además, la aplicación debe poder informar al usuario del estado de los sensores del drone como es su orientación y su batería restante.</p>
+            <p>
+            El vuelo se trazará mediante trayectorias en un mapa incrustado en la aplicación. El drone ejecutará el vuelo en tiempo real mientras que el usuario traza la trayectoria en el mapa.
+            Cuando se finaliza un vuelo, el usuario tendrá la opción de guardar la ruta realizada, quedando registrada en la base de datos de la aplicación.</p>
+                    <figure>
+                            <img class="img-responsive" alt="Captura de la pantalla principal" src="images/pantalla.png"><figcaption class="text-center">Pantalla de vuelo de la aplicación</figcaption>
+                        </figure>
+                        <p>
+            La aplicación debe permitir al usuario reproducir rutas ya realizadas, hechas por el mismo, en cualquier momento. Además, durante el transcurso de las rutas, se le debe permitir pausarlas, dando la posibilidad de  regresar al punto de partida desde el punto donde se pausó o bien reanudarlas si sólo se quería hacer una pausa momentánea.</p>
+            <p>
+            El robot también podrá realizar varios aterrizajes en una misma ruta. Esto tiene como objetivo poder realizar “paradas” que podrían ser útiles a la hora de transportar algo en diferentes sitios dentro de un mismo entorno cerrado, pensando en un entorno industrial.</p>
+           
+        </section>
+        <div class="text-center">
+                <a href=../index.html class="btn btn--border btn--primary btn--animated">Volver</a>
+                <div class="etiquetas">      
+                        <!--<p>
+                              <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                  <img style="border:0;width:88px;height:31px"
+                                      src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                      alt="¡CSS Válido!" />
+                              </a>
+                          </p>-->
+                          <p>
+                            <a href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AAA">
+                              <img style="border:0;width:88px;height:31px" src="../images/achecker.jpg" alt="WCAG 2.0 (Level AAA)" height="32" width="102" />
+                            </a>
+                          </p>
+                            
+                          <p>
+                          <a href="https://validator.w3.org/check?uri=referer">
+                              <img
+                            src="../images/html.png"
+                            alt="HTML5 Válido" title="HTML5 Checker" style="border:0;width:88px;height:31px"  />
+                          </a>
+                          </p>
+                    </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="../js/busqueda.js"></script>
+    </body>
+</html>

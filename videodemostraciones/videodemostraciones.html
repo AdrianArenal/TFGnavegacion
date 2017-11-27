@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Galería</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/lightgallery.css">
+        <link rel="stylesheet" href="../css/etiquetas.css">
+        <link rel="stylesheet" href="../css/btnVolver.css">
+        <link rel="stylesheet" href="../css/btnBuscar.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link href="css/video.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.5/dist/css/lightgallery.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    </head>
+    <body class="contenido">
+            <div class="buscar col-xs-12">
+                    <button type="submit" onclick="buscar()" class="btn btn-default pull-right">Buscar</button>
+                    <input id="busqueda" class="pull-right">
+                  </div>
+                  <div id="respuestaBusqueda" title="Resultado Busqueda"></div>
+        <h1 class="text-center col-xs-12">Videodemostraciones</h1>
+        <h2 class="text-center small col-xs-12">Haz click en las miniaturas de los diferentes videos para visualizarlos.</h2>
+        <div id="video-gallery" class="video-gallery col-md-12">
+            <a class="col-xs-12 col-sm-3 col-md-4" href="https://youtu.be/97sX25WV4aA">
+                <img class="img-responsive" alt ="Diseño del plano" src="images/thumb1.jpg" />
+            </a>
+            <a class="col-xs-12 col-sm-3 col-md-4" href="https://youtu.be/HXwlmhVoq2I" >
+                <img class="img-responsive" alt ="Vuelo simple" src="images/thumb2.jpg" />
+            </a>
+            <a class="col-xs-12 col-sm-3 col-md-4" href="https://youtu.be/NNw0lvkIGws" >
+                <img class="img-responsive" alt ="Ruta inversa" src="images/thumb3.jpg" />
+            </a>
+            <a class="col-xs-12 col-sm-3 col-md-4" href="https://youtu.be/Kn1fclb0rbw" >
+                <img class="img-responsive" alt ="Reproduccion de ruta" src="images/thumb4.jpg" />
+            </a>
+            <a class="col-xs-12 col-sm-3 col-md-4" href="https://youtu.be/j0MiJrMN-20" >
+                <img class="img-responsive" alt ="Calibracion" src="images/thumb5.jpg" />
+            </a>
+            <a class="col-xs-12 col-sm-3 col-md-4" href="https://youtu.be/chaDLrxeLCQ">
+                <img class="img-responsive" alt ="Fijar altura maxima" src="images/thumb6.jpg" />
+            </a>
+          </div>
+        <div class="text-center col-xs-12">
+                <a href=../index.html class="btn btn--border btn--primary btn--animated">Volver</a>
+                <div class="etiquetas">      
+                          <p>
+                            <a href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AAA">
+                              <img src="../images/achecker.jpg" alt="WCAG 2.0 (Level AAA)" style="border:0;width:88px;height:31px" />
+                            </a>
+                          </p>
+                              <p>
+                         <a href="https://validator.w3.org/check?uri=referer">
+                              <img
+                            src="../images/html.png"
+                            alt="HTML5 Válido" title="HTML5 Checker" style="border:0;width:88px;height:31px"  />
+                          </a>
+                          </p>
+                    </div>
+        </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="js/lightgallery.min.js" type="text/javascript"></script>
+          <!-- lightgallery plugins -->
+        <script src="js/lg-thumbnail.min.js"></script>
+        <script src="js/lg-fullscreen.min.js"></script>
+        <script src="js/lg-video.min.js"></script>
+
+        <script src="js/video.js"></script>
+        <script src="js/videogallery.js"></script>
+        <script src="../js/busqueda.js"></script>
+           </body>
+</html>

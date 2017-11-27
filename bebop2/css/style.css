@@ -1,0 +1,17 @@
+/*0002*/
+section img{
+    margin:0px auto;
+    width:30%;
+    border-width: 3px 4px 3px 5px;
+    border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    transform: rotate(2deg);
+}
+/*0002*/
+section p{
+    margin-left:15%;
+    margin-right:15%;
+}
+/*0001*/
+div{
+    text-align: center;
+}

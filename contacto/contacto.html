@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TFG - Adrian Arenal Pereira</title>
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="../css/btnVolver.css">
+        <link rel="stylesheet" href="../css/etiquetas.css">
+        <link rel="stylesheet" href="../css/btnBuscar.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    </head>
+<body class="contenido">
+        <div class="buscar col-xs-12">
+                <button type="submit" onclick="buscar()" class="btn btn-default pull-right">Buscar</button>
+                <input id="busqueda" class="pull-right">
+              </div>
+        <div id="respuestaBusqueda" title="Resultado Busqueda"></div>
+<h1 class="text-center">¿Tienes alguna duda? Envíame un mensaje</h1>
+<form action="#">
+    <h2 class="text-center">Formulario de contacto</h2>
+    <div class="form-group">
+        <label for="firstname">Nombre:</label>
+        <input type="text" class="form-control" name="firstname" id="firstname">
+    </div>
+    <div class="form-group">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" class="form-control" name="apellidos" id="apellidos">
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" class="form-control" name="email" id="email">
+    </div>
+    <div class="form-group">
+    <label for="mensaje">Mensaje:</label>
+     <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Confirmar</button>
+</form>
+
+<div class="text-center">
+        <a href=../index.html class="btn btn--border btn--primary btn--animated">Volver</a>
+
+        <div class="etiquetas">      
+                  <p>
+                        <a href="https://achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AAA">
+                          <img style="border:0;width:88px;height:31px" src="../images/achecker.jpg" alt="WCAG 2.0 (Level AAA)" height="32" width="102" />
+                        </a>
+                      </p>
+                      <p>
+                      <p>
+                  <a href="https://validator.w3.org/check?uri=referer">
+                      <img
+                    src="../images/html.png"
+                    alt="HTML5 Válido" title="HTML5 Checker" style="border:0;width:88px;height:31px"  />
+                  </a>
+                  </p>
+            </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/busqueda.js"></script>
+    </body>
+</html>

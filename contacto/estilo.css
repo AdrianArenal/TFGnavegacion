@@ -1,0 +1,21 @@
+/*0001*/
+.contenido {
+    background-image: url("../images/bg.png");
+    font-family: 'Ultra', sans-serif; 
+    text-align: center;
+}
+/*0001*/
+body > * {
+    text-align: left;
+}
+/*0001*/
+form {
+    background: white;
+    display: inline-block;
+    border: solid black;
+    border-color: black;
+    border-width: 5px 3px 3px 5px;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    padding:2%;
+    margin: 5%;
+}

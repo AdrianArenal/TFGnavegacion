@@ -1,0 +1,39 @@
+/*0001*/
+.contenido {
+    background-image: url("../../images/bg.png");    
+    margin-top:2%;
+}
+
+.video-gallery {
+    
+   height: auto;
+
+}
+.video-gallery a{
+    display:inline-block;
+    
+
+}
+.video-gallery a img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    padding:5%;
+    border-radius: 25px;
+
+}
+.video-gallery a img:hover{
+    transform: scale(1.2);
+   
+   }
+@media (max-width: 991px) {
+    .video-gallery a{
+    margin:1%;
+    }
+}
+@media (max-width: 576px) {
+    .video-gallery a{
+       margin:4%;
+    
+    }
+   }
